@@ -45,6 +45,9 @@ body{
     grid-template-columns: repeat(2,1fr);
     padding-top: 5%;
 }
+.header-img img{
+    width: 100%;
+}
 .header-content h1{
     font-size: 55px;
    color: #000;
@@ -178,7 +181,66 @@ footer p{
     
 }
 
+/* Responsive website */
+@media screen and (max-width:576px) {
+    .container{
+        width: 100%;
+        margin-left: 2%;
+    }
+    .logo{
+       width: 100%;
+       text-align: center;
+       margin: 0px;
+    }
+    .menu-item {
+        display: none;
+    }
+    .header-menu{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        
+    }
+    .hero-section{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .sponsor{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        justify-items: center;
+        
+    }
+    .sponsor img{
+        padding: 10px 0px 10px 0px;
+    }
+    .blogs{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .Featured-products{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+@media screen and (min-width:576px) and (max-width:992px){
 
+.header-menu{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        justify-items: center;
+        
+    }
+    .hero-section{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .sponsor{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        justify-items: center;
+        
+    }
+    .blogs{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
 
 
 
